@@ -22,7 +22,7 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ButtonStyle style = ElevatedButton.styleFrom(
-      primary: color,
+      backgroundColor: color,
       textStyle: TextStyle(fontSize: fontSize, fontWeight: FontWeight.bold),
     );
     return ConstrainedBox(

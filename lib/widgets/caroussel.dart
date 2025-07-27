@@ -1,20 +1,20 @@
 import 'package:ecommerce_app/widgets/carditem.dart';
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' as carousel;
 
 class Caroussel extends StatelessWidget {
   const Caroussel({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    CarouselController buttonCarouselController = CarouselController();
+    carousel.CarouselController buttonCarouselController = carousel.CarouselController();
 
     return Column(
       children: <Widget>[
-        CarouselSlider(
+        carousel.CarouselSlider(
           carouselController: buttonCarouselController,
           items: [CardItem(), CardItem(), CardItem()],
-          options: CarouselOptions(
+          options: carousel.CarouselOptions(
             height: 308,
             autoPlay: false,
             enlargeCenterPage: true,

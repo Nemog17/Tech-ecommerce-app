@@ -79,9 +79,9 @@ class Login extends StatelessWidget {
                               Navigator.pushReplacementNamed(context, "/");
                             },
                             style: ElevatedButton.styleFrom(
-                                primary: const Color(0xff5956E9),
-                                fixedSize: Size(314.0, 70.0),
-                                onPrimary: Colors.white,
+                                backgroundColor: const Color(0xff5956E9),
+                                fixedSize: const Size(314.0, 70.0),
+                                foregroundColor: Colors.white,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10.0)),
                                 padding:

@@ -40,8 +40,8 @@ class Splash extends StatelessWidget {
                         fit: BoxFit.contain))),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.white,
-                onPrimary: const Color(0xff5956E9),
+                backgroundColor: Colors.white,
+                foregroundColor: const Color(0xff5956E9),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),

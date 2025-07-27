@@ -10,7 +10,7 @@ class ButtonMini extends StatelessWidget {
     return Container(
 
       child:  ElevatedButton(
-          style: ElevatedButton.styleFrom(shadowColor: Colors.black,elevation: 4.0,primary: Colors.white,onPrimary: Colors.black),
+          style: ElevatedButton.styleFrom(shadowColor: Colors.black,elevation: 4.0,backgroundColor: Colors.white,foregroundColor: Colors.black),
           onPressed: (){},
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
