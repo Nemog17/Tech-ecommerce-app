@@ -20,7 +20,7 @@ class CartItem extends StatelessWidget {
       minimumSize: const Size(22, 22),
       maximumSize: const Size(22, 22),
       elevation: 0,
-      primary: Color(0xFF7DCCEC),
+      backgroundColor: const Color(0xFF7DCCEC),
     );
 
     return Container(

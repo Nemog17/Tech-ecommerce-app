@@ -46,7 +46,7 @@ class Profile extends StatelessWidget {
                     children: <Widget>[
                       const SizedBox(height: 12),
                       Stack(
-                        overflow: Overflow.visible,
+                        clipBehavior: Clip.none,
                         alignment: AlignmentDirectional.topCenter,
                         fit: StackFit.loose,
                         children: <Widget>[

@@ -3,14 +3,14 @@ import 'package:ecommerce_app/widgets/buttonmini.dart';
 import 'package:ecommerce_app/widgets/carditem.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' as carousel;
 
 class SingleItem extends StatelessWidget {
   const SingleItem({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    CarouselController buttonCarouselController = CarouselController();
+    carousel.CarouselController buttonCarouselController = carousel.CarouselController();
     return Scaffold(
         backgroundColor: const Color(0xffF6F6F9),
         body: Column(
@@ -110,7 +110,7 @@ class SingleItem extends StatelessWidget {
                         alignment: Alignment.topLeft,
                         padding: const EdgeInsets.only(left:45),
                         child: ElevatedButton(
-                            style: ElevatedButton.styleFrom(primary: Colors.white,padding: EdgeInsets.all(0.0),elevation: 0.0),
+                            style: ElevatedButton.styleFrom(backgroundColor: Colors.white,padding: EdgeInsets.all(0.0),elevation: 0.0),
                             onPressed: (){}, child: const Text('Full description ->',
                           style: TextStyle(color: Color(0xff5956E9),fontSize: 15,fontWeight: FontWeight.w700,fontFamily: 'Raleway'),)
                         )
@@ -152,14 +152,14 @@ class CarouselWithIndicatorDemo extends StatefulWidget {
 
 class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final carousel.CarouselController _controller = carousel.CarouselController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: <Widget>[
         Expanded(
-          child: CarouselSlider(
+          child: carousel.CarouselSlider(
             items: const [
               Image(
                 image: AssetImage('assets/images/ipad.png'),
@@ -172,7 +172,7 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
               )
             ],
             carouselController: _controller,
-            options: CarouselOptions(
+            options: carousel.CarouselOptions(
                 height: 240,
                 autoPlay: true,
                 enlargeCenterPage: true,
