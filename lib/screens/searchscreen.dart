@@ -154,10 +154,10 @@ class _SearchResultState extends State<SearchResult> {
                           SearchItem(),
                         ],
                         staggeredTiles: const [
-                          StaggeredTile.count(2, 4),
-                          StaggeredTile.count(2, 5),
-                          StaggeredTile.count(2, 4),
-                          StaggeredTile.count(
+                          const StaggeredTile.count(2, 4),
+                          const StaggeredTile.count(2, 5),
+                          const StaggeredTile.count(2, 4),
+                          const StaggeredTile.count(
                               2, 4), // takes up 2 rows and 2 columns space
                         ],
                       ))

@@ -7,7 +7,8 @@ class Caroussel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    carousel.CarouselController buttonCarouselController = carousel.CarouselController();
+    carousel.CarouselSliderController buttonCarouselController =
+        carousel.CarouselSliderController();
 
     return Column(
       children: <Widget>[
